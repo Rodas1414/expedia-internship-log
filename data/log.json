@@ -1,1 +1,27 @@
-
+{
+  "meta": {
+    "internStart": "2026-06-29",
+    "internEnd": "2026-08-28",
+    "internName": "Rodas",
+    "manager": "Chris",
+    "project": "aerosol-action"
+  },
+  "entries": {
+    "2026-06-29": {
+      "status": "done",
+      "did": "Scaffolded repo via Backstage (action typescript template). Resolved access chain — Backstage DL membership, Okta sync, GHEC team perms — via gheco. Fixed CI: corepack enable step, yarn.lock drift from Yarn 4.6.0 migration, missing globals ESLint dep. Merged CODEOWNERS pointing to @eg-internal/devex-release-engineering-team. Confirmed branch protection is an org-level ruleset, not repo settings. Added RE team as collaborator (Maintain) via gheco. Set up AI DLC framework files from awslabs/aidlc-workflows.",
+      "blocked": "",
+      "contacts": "Praveen — approved Backstage access. jdestefano — reviewed/approved Workday goals pre-internship.",
+      "learned": "Access provisioning at a large org involves multiple async steps chained together (DL membership, Okta sync cycles, then GHEC permission propagation) — front-loading access requests early avoids losing days later. Also learned branch protection can be enforced at an org level via rulesets rather than per-repo settings, which isn't obvious until you go looking for it in the wrong place.",
+      "updatedAt": "2026-06-29T21:00:00Z"
+    },
+    "2026-06-30": {
+      "status": "in progress",
+      "did": "Drafted v0 input/output contract by reviewing RCP Action's action.yml (retry/timeout patterns, mode-style inputs, Splunk URL output conventions) and the Bruno v1-v2 collection (real Aerosol URL path structure, response fields).",
+      "blocked": "Exact header attachment format for aerosol_token is unresolved — confirmed as a Bruno secret variable, but not how it gets attached to requests.",
+      "contacts": "Joe — technical lead, reviewing contract draft.",
+      "learned": "Reading an existing reference implementation (RCP Action) before writing a new contract from scratch saves a lot of guesswork — the retry/timeout and output-naming conventions were already solved problems, just needed to be found and reused.",
+      "updatedAt": "2026-06-30T21:00:00Z"
+    }
+  }
+}
